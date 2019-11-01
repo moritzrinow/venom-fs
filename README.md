@@ -48,7 +48,7 @@ GET /_file/?path=sample_dir/sample.json
 
 ### Check if file exists
 
-GET /_file/has/?path=sample_dir/sample.json  
+GET /_file/has?path=sample_dir/sample.json  
 -> "True" / "False"  
 
 ### Upload file
@@ -58,10 +58,10 @@ POST /_file/?path=sample_dir/sample.json [BODY]: Binary file content
 
 ### List files of a directory
 
-GET /_file/list/?path=sample_dir  
+GET /_file/list?path=sample_dir  
 -> []  
 
 ### List subdirectories of a directory
 
-GET /_dir/list/?path=sample_dir  
+GET /_dir/list?path=sample_dir  
 -> []  
