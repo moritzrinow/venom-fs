@@ -19,9 +19,9 @@ venv\scripts\pip install -r requirements.txt
 
 #### Define environment variables
 
-set FLASK_APP=venomfs  
-set FLASK_ENV=development  
-set VENOM_FS_ROOT=data  
+FLASK_APP=venomfs  
+FLASK_ENV=development  
+VENOM_FS_ROOT=data  
 
 Linux:  
 ./venv/bin/python3 -m flask run  
