@@ -8,7 +8,8 @@ def create_app():
   def ping():
     return "PONG"
 
-  from server.server import file_bp, dir_bp
+  from .server import init_server, file_bp, dir_bp
+  init_server()
 
   app.register_blueprint(file_bp)
   app.register_blueprint(dir_bp)
